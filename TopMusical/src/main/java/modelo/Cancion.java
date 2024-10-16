@@ -6,6 +6,7 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.io.*;
 
@@ -78,7 +79,7 @@ public class Cancion implements Comparable<Cancion> {
                     listaHistorial.add(Integer.valueOf(h));
                 }
                 Cancion c = new Cancion(datos[0], datos[1], datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]), Integer.valueOf(datos[5]),  listaHistorial);
-                lista.add(c);
+                lista.add(c); 
             }
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
