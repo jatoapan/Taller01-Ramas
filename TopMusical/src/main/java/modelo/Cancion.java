@@ -57,7 +57,7 @@ public class Cancion implements Comparable<Cancion> {
         return posPrevia;
     }
 
- 
+
     public int getSemanas() {
         return semanas;
     }
@@ -69,7 +69,7 @@ public class Cancion implements Comparable<Cancion> {
     public static ArrayList<Cancion> leerCanciones() {
         ArrayList<Cancion> lista = new ArrayList<>();
 
-        try ( BufferedReader br = new BufferedReader(new FileReader("top10.csv"))) {
+        try ( BufferedReader br = new BufferedReader(new FileReader("TopMusical\\top10.csv"))) {
             String linea = "";
             while ((linea = br.readLine()) != null) {
                 String[] datos = linea.split(";");

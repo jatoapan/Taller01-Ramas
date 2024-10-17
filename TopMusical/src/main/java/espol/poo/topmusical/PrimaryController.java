@@ -26,7 +26,7 @@ public class PrimaryController {
     private ImageView ivCancion;
     @FXML
     private Label lblInfo;
-    
+
     private static ArrayList<Cancion> listaCanciones;
 
     public void initialize() {
@@ -39,7 +39,7 @@ public class PrimaryController {
             lbp.setStyle("-fx-font-weight: bold;-fx-font-size: 40;");
             ImageView iv = new ImageView();
             try {
-                Image img = new Image(new FileInputStream("img/" + c.getImagen()), 50, 50, true, true);
+                Image img = new Image(new FileInputStream("TopMusical\\img\\" + c.getImagen()), 50, 50, true, true);
                 iv.setImage(img);
 
             } catch (FileNotFoundException ex) {
