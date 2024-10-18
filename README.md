@@ -3,7 +3,7 @@
 
 Jose - titulo
 antes:
-![alt text](antes)
+![alt text](antes.png)
 despues:
 ![alt text](despues.png)
 
